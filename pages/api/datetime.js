@@ -2,7 +2,7 @@ const fetch = require("node-fetch");
 
 const fetchCharacters = async () => {
   const res = await fetch("https://api.coindesk.com/v1/bpi/currentprice.json");
-  const { results } = await res.json();
+  const results = await res.json();
 
   // ADD ONE HERE
   console.log(results);
